@@ -4,7 +4,7 @@ ENV GO111MODULE=on
 ENV GOPATH /go
 WORKDIR /go/src/github.com/relyt0925/hello-world-azure-app/
 RUN mkdir -p /tmp/bincache
-ADD . /go/src/github.com/relyt0925/hello-world-multicloud-app
+ADD . /go/src/github.com/relyt0925/hello-world-azure-app
 RUN go build /go/src/github.com/relyt0925/hello-world-azure-app/main.go
 RUN mv -f /go/src/github.com/relyt0925/hello-world-azure-app/main /tmp/bincache/main
 

@@ -8,7 +8,7 @@ curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
 ibmcloud login --apikey "${IAM_APIKEY}" -r us-south -c 837bf8218846470cad3ecf8bf7dcc43b
 ibmcloud plugin install container-service -f
 git clone https://github.com/relyt0925/hello-world-azure-app.git
-cd hello-world-multicloud-app
+cd hello-world-azure-app
 export GIT_HEAD_COMMIT=$(git rev-parse HEAD)
 echo "$SIGNING_PRIV_KEY_64" | base64 -d > /tmp/priv.key
 gpg --import /tmp/priv.key
